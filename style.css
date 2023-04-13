@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior:smooth ;
+}
+
+.heading__2 :hover{
+  background-color: aliceblue;
+  padding: 32px 8px;
+  border-radius: 5px;
+}
+
+.list-group-item {
+  transition: 0.3s linear;
+}
+.user{
+  width: 32%;
+}
+ul {
+  width: 100%;
+}
