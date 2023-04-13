@@ -37,14 +37,16 @@ studentBtn.addEventListener("click", (evt) => {
 userForm.addEventListener("submit", async evt => {
   evt.preventDefault()
   
-  let {user_name, user_username, user_address} = evt.target.elements
+  let {user_name, user_username, user_address,user_zipcode,user_phone} = evt.target.elements
   
   let Obj = {
     name: user_name.value,
     username: user_username.value,
     address: {
       city: user_address.value,
+      zipcode : user_zipcode.value,
     },
+    phone : user_phone.value,
   };
   
   let result = await Api.POST("users", Obj);
